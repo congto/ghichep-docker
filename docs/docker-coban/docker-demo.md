@@ -44,12 +44,12 @@
 
 - Bước 1: Tạo một container chạy DB cho zabbix
 	```sh
-docker run \
-	-d \
-	--name zabbix-db \
-	--env="MARIADB_USER=zabbix" \
-	--env="MARIADB_PASS=my_password" \
-	monitoringartist/zabbix-db-mariadb
+	docker run \
+		-d \
+		--name zabbix-db \
+		--env="MARIADB_USER=zabbix" \
+		--env="MARIADB_PASS=my_password" \
+		monitoringartist/zabbix-db-mariadb
 	```
 
 - Bước 2: Tạo một container chạy zabbix và liên kết với container có tên là `zabbix-db` vừa tạo ở bên trên
